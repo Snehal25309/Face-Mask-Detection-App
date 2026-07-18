@@ -7,6 +7,18 @@ from PIL import Image
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
+import gdown
+import os
+
+FILE_ID = "1OkUZU__QN2iUBFQZjvhJLkOEOTaCmBBd"
+OUTPUT = "mask_final.keras"
+
+if not os.path.exists(OUTPUT):
+    gdown.download(
+        f"https://drive.google.com/uc?id={FILE_ID}",
+        OUTPUT,
+        quiet=False
+    )
 
 st.title("Face Mask Detection")
 

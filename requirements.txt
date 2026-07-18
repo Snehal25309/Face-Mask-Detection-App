@@ -1,5 +1,6 @@
-pandas
 streamlit
+tensorflow
+opencv-python-headless
 numpy
-scikit-learn
+pillow
 gdown
